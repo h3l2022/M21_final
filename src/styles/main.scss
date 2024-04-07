@@ -1,0 +1,54 @@
+@use 'variaveis';
+@use 'hero';
+@use 'temporadas';
+@use 'premiada';
+@use 'plans';
+@use 'footer';
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    background-color: variaveis.$corDeFundo;
+}
+
+@mixin text($fontSize: 16px) {
+    font-size: $fontSize;
+    line-height: $fontSize + 10px;
+    color: variaveis.$corTextoSecundario;
+}
+
+@mixin text($fontSize: 16px) {
+    font-size: $fontSize;
+    line-height: $fontSize + 10px;
+    color: #fff,
+}
+
+@mixin title($fonteSize: 28px) {
+    @include text($fonteSize);
+    color: #fff
+}
+
+.text--big {
+    @include text;
+}
+
+.text {
+    @include text ;
+}
+
+.text--small {
+    color: #fff;
+    @include text(12px);
+}
+
+.link-text {
+    @include text(18px);
+    color: #fff;
+}
+ 

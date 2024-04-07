@@ -1,0 +1,53 @@
+.temporadas {
+    padding: 2vw 6vw;
+    margin-top: 80px;
+
+    &__list {
+        display: none;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 8px;
+
+    &--is-active {
+        display: grid;
+    }
+
+    &__images {
+        width: 100%;
+
+        img {
+            max-width: 350px;
+        }
+    }
+
+    }
+
+    &__tabs {
+        margin-bottom: 48px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .temporadas__tabs__button {
+        color: white;
+        font-size: 20px;
+        border: none;
+        padding-bottom: 5px;
+        background: none;
+        text-transform: uppercase;
+        margin: 0 1vw;
+        cursor: pointer;
+        border-bottom: 5px solid transparent;
+    }
+
+    .temporadas__tabs__button--is-active {
+        border-bottom: 5px solid #fff;
+
+    }
+}
+
+.elenco {
+    color: #fff;
+    font-size: 16px;
+}
+
+
